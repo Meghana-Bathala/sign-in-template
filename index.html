@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+    }
+    .container{
+        display:flex;
+        width:580px;
+        box-shadow: 1px 1px 1px 1px rgb(210, 207, 207);
+    }
+    .part{
+        background-image: repeating-linear-gradient(to right,rgb(252, 71, 71),rgba(239, 67, 107, 0.879));     
+    }
+    .section1{    
+        margin:20px;
+        text-align: center;
+        width:250px;
+    }
+    .section2{  
+        margin:100px 20px;
+        color:white;
+        text-align: center;
+        width:250px;    
+    }
+    input{
+        padding:10px;
+        background-color: rgb(241, 239, 239);
+        border:none;
+    }
+    img{
+        width: 30px;
+        height:30px;
+    }
+    form{
+        display:grid;
+        gap:10px;
+    }
+    #id2{
+        padding:10px 30px;
+        color:white;
+        background-color: orangered;
+        border:none;
+        border-radius:10px;
+        box-shadow: 1px 1px 2px 1px orangered;
+    }
+    #id1{
+        padding:10px 30px;
+        color:white;
+        background-image: repeating-linear-gradient(to right,rgb(252, 71, 71),rgba(239, 67, 107, 0.879));
+        border:1px solid white;
+        border-radius:10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="section1">
+            <!--section for to sign-in if the user has already an account-->
+            <h1>Sign in</h1>
+            <div class="logos">
+                <img src="./facebook.png" alt="">
+                <img src="./letter-g.png" alt="">
+                <img src="./linkedin.png" alt="">
+            </div>
+            <p>or use your account</p>
+            <form action="">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="password">
+            </form>
+            <p>Forgot your password?</p>
+            <button id="id2">SIGN IN</button>
+        </div>
+        <!--section for a new user to signup-->
+        <div class="part">
+            <div class="section2">
+            <h2>Hello,Friend!</h2>
+            <p>Enter your personal details and start<br>journey with us</p>
+            <button id="id1">SIGN UP</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
